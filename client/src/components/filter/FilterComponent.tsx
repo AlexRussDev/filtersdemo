@@ -308,25 +308,27 @@ const FilterComponent: React.FC<IFilterComponentProps> = ({
         padding="30px"
       >
         {content}
-        <Box width="100%">
-          <Grid container spacing={2}>
-            <Grid item xs={6}>
-              <Button fullWidth variant="outlined" onClick={onClose}>
-                Close
-              </Button>
+        {!loading && (
+          <Box width="100%">
+            <Grid container spacing={2}>
+              <Grid item xs={6}>
+                <Button fullWidth variant="outlined" onClick={onClose}>
+                  Close
+                </Button>
+              </Grid>
+              <Grid item xs={6}>
+                <Button
+                  fullWidth
+                  variant="contained"
+                  color="primary"
+                  onClick={handleSave}
+                >
+                  Save
+                </Button>
+              </Grid>
             </Grid>
-            <Grid item xs={6}>
-              <Button
-                fullWidth
-                variant="contained"
-                color="primary"
-                onClick={handleSave}
-              >
-                Save
-              </Button>
-            </Grid>
-          </Grid>
-        </Box>
+          </Box>
+        )}
       </Box>
     </>
   );

@@ -3,10 +3,12 @@ import { Box, CircularProgress } from "@mui/material";
 
 interface LoadingSpinnerProps {
   loading: boolean;
+  embeded?: boolean;
 }
 
 const LoadingSpinnerComponent: React.FC<LoadingSpinnerProps> = ({
   loading,
+  embeded = true,
 }) => {
   if (!loading) {
     return null;
@@ -18,7 +20,7 @@ const LoadingSpinnerComponent: React.FC<LoadingSpinnerProps> = ({
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        height: "100%",
+        height: embeded ? "100%" : "100vh",
       }}
     >
       <CircularProgress />

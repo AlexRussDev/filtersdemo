@@ -1,7 +1,7 @@
 import axios, { AxiosError, AxiosResponse } from "axios";
 import { ErrorMessage, WarningMessage } from "../components/ToastNotification";
 
-const sleep = () => new Promise((resolve) => setTimeout(resolve, 100));
+const sleep = () => new Promise((resolve) => setTimeout(resolve, 1000));
 const responseBody = (response: AxiosResponse) => response.data;
 
 axios.interceptors.response.use(

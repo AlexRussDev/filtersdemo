@@ -40,7 +40,7 @@ const FiltersViewComponent: React.FC = () => {
 
   return (
     <>
-      <LoadingSpinnerComponent loading={loading} />
+      <LoadingSpinnerComponent loading={loading} embeded={false} />
       {!loading && (
         <Box display="flex" flexDirection="column" alignItems="center" p={2}>
           <Grid container spacing={1} justifyContent="center">
