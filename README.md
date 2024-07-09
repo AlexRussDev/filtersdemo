@@ -30,8 +30,11 @@ gradlew bootRun
 
 ### Run the frontend
 cd client
+
 npm install
+
 npm start
+
 
 P.S database table schema and test data will be added on application startup
 
