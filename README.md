@@ -4,6 +4,7 @@ A brief description of what this project does and its purpose.
 
 ## Prerequisites
 Ensure you have the following installed:
+- [React 18+](React Library)
 - [Java Development Kit (JDK) 17](https://www.oracle.com/java/technologies/javase-jdk17-downloads.html)
 - [Gradle](https://gradle.org/install/)
 - [Git](https://git-scm.com/downloads)
