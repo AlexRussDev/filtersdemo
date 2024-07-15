@@ -32,7 +32,7 @@ axios.interceptors.response.use(
         WarningMessage("You are not allowed to do that!");
         break;
       case 500:
-        ErrorMessage(data.messages.join("\r\n"));
+        ErrorMessage("Internal Server Error");
         throw modelStateErrors.flat();
       default:
         break;
